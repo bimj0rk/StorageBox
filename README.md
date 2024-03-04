@@ -1,4 +1,4 @@
-# Storage Box v2
+# Storage Box
 For this project, I created a Storage Box that acts as a Vallet Tray.
 
 ## Storage Box v1: Offline only
