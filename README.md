@@ -1,7 +1,7 @@
 # Storage Box
 For this project, I created a Storage Box that acts as a Vallet Tray.
 
-## Storage Box v1: Offline only
+## Storage Box v1: Offline only (made solo by me, Adrian Campean ([@bimj0rk](https://github.com/bimj0rk)))
 The storage box can be opened by either waving the hand in front of a distance sensor, either by pressing a button on a remote control. The box features two modes: autonomous, which closes the box automatically after it was opened, and manual, which closes the box manually by repeading one of the aforementioned actions.
 
 ### Components used
@@ -109,12 +109,12 @@ For the software part, I used only libraries publicly available within the Ardui
   }  
   ```
 
-## Storage Box v2: Online mode
+## Storage Box v2: Online mode (made in collaboration with Dan Deaconu ([@DoubleDew](https://github.com/DoubleDew)) and Darius Nazemian ([@dariusnp](https://github.com/dariusnp)))
 For the second version, I upgraded the box such that it can be opened and closed via HomeKit.
 
 ### Upgrades
 Instead of the Arduino Uno R3, I used the Arduino Nano ESP32, which can access my network and thus connect to HomeKit.
-The library used, HomeSpan (https://github.com/HomeSpan/HomeSpan), allows the Arduino to act as a HomeKit hub and device at the same time.
+The library used, [HomeSpan](https://github.com/HomeSpan/HomeSpan), allows the Arduino to act as a HomeKit hub and device at the same time.
 I removed all sensors and added one more servomotor, for stability.
 In the Home app, the box appears as a window blind, as it allows for incremental opening and closing, should it be needed.
 
